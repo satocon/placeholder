@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://dl.dropbox.com/s/3bau8zo9sm0ct6d/cpt_logo.png">
+    <title>mental.directory</title>
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body onload="time()">
+    <main>
+        <header>The current system time is <span id="time"></span> on <span id="date"></span>.</header>
+        <!-- MAIN NAV TAB -->
+        <section id="index" style="display: grid;">
+            <hr>
+            <ul class="main-list">
+                <li onclick="tabs(about)">> About The User</li>
+                <li onclick="tabs(extra)">> View Additional Information</li>
+                <li onclick="tabs(contact)">> Contact</li>
+            </ul>
+        </section>
+        <!------ END ------>
+
+        <!-- ABOUT THE USER TAB -->
+        <section id="about" style="display: none;">
+            <ul class="alt-list">
+                <li><span>LOREM IPSUM</span> Dolor</li>
+                <li><span>SIT</span> Amet</li>
+            </ul>
+            <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </section>
+        <!--------- END --------->
+
+        <!-- ADDITIONAL INFORMATION TAB -->
+        <section id="extra" style="display: none;">
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+        </section>
+        <!-------------  END ------------->
+
+        <!-- CONTACT TAB -->
+        <section id="contact" style="display: none;">
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <ul class="alt-list">
+                <li><span>AT VERO EOS</span> <a href="">et accusamus</a></li>
+                <li><span>ET IUSTO</span> <a href="">odio dignissimos</a></li>
+            </ul>
+        </section>
+        <!------ END ------>
+
+        <div class="back" style="display: none;">Click <a class="list-tab-link" id="index-control">INDEX</a> or press Enter to go back</div>
+        <footer>> <span class="type"></span><span class="blink">█</span></footer>
+    </main>
+    
+    <!-- SCRIPTS -->
+    <script src="./js/navigation.js"></script>
+    <script src="./js/clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* FONTS */
+@font-face {
+    font-family: FSEX300;
+    src: url(https://dl.dropbox.com/s/gc20b0kwj53dums/FSEX300.ttf);
+}
+/* END */
+
+:root {
+    --c1: #ffffff;
+    --c2: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration-thickness: 1px;
+}
+
+body {
+    font-size: 16px;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+
+    font-family: 'FSEX300', monospace;
+    color: var(--c1);
+    background-color: var(--c2);
+}
+
+/* COMMONS */
+a {
+    color: inherit;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: var(--c1);
+}
+/* END */
+
+main {
+    margin: auto;
+    max-width: calc(100% - 5.75rem);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+header {
+    text-align: justify;
+}
+
+header span {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+section {
+    row-gap: 20px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.alt-list li span::after { content: ' >'; }
+.alt-list li span::before { content: '< '; }
+
+.list-tab-link::after { content: ' ]'; }
+.list-tab-link::before { content: '[ '; }
+
+.main-list {
+    display: grid;
+    row-gap: 20px;
+}
+
+.alt-list {
+    display: grid;
+    row-gap: 10px;
+    margin-left: 20px;
+}
+
+.list-tab-link:hover, .list-tab-link.hover,
+.main-list li:hover, .main-list li.hover {
+    transition: .2s ease-out;
+    color: var(--c2);
+    background-color: var(--c1);
+    cursor: help;
+}
+
+/* QUERIES */
+@media (min-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+
+    main {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        padding: 40px 50px;
+        font-size: 24px;
+        width: 800px;
+    }
+}
