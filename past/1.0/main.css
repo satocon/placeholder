@@ -91,6 +91,23 @@ footer {
     cursor: help;
 }
 
+.blink {
+    animation-name: blink;
+    animation-duration: 1s;
+}
+
+/* ANIM */
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+    }
+}
+
 /* QUERIES */
 @media (min-width: 600px) {
     body {
