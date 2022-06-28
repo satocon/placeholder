@@ -92,8 +92,7 @@ footer {
 }
 
 .blink {
-    animation-name: blink;
-    animation-duration: 1s;
+    animation: blink 1s infinite;
 }
 
 /* ANIM */
